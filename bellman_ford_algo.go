@@ -22,6 +22,7 @@ func findShortestPath(graph [][][]int, start int) []int {
 			return distances
 		}
 	}
+	// iterate the nth time to check if a negative weight cycle is existed or not
 	if relaxAndUpdateDistance(graph, distances) {
 		fmt.Println("detect a negative weight cycle in the graph")
 	}
